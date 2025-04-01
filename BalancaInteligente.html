@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balança Inteligente</title>
+    <link rel="stylesheet" href="BalancaInteligente.css">
+   <!--- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Balança Inteligente</h1>
+        <nav>
+            <ul>
+                <li><a href="#" id="inicio-link">Início</a></li>
+                <li><a href="#" id="pesagem-link">Pesagem</a></li>
+                <li><a href="#" id="historico-link">Histórico</a></li>
+                <li><a href="#" id="cadastro-link">Cadastrar Animal</a></li>
+                <li><a href="#" id="contato-link">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="conteudo-principal">
+        <!-- Conteúdo será carregado dinamicamente via JavaScript -->
+        <section class="dashboard">
+            <h2>Dashboard</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <h3>Total de Animais</h3>
+                    <p id="total-animais">0</p>
+                </div>
+                <div class="card">
+                    <h3>Última Pesagem</h3>
+                    <p id="ultima-pesagem">Nenhuma pesagem registrada</p>
+                </div>
+            </div>
+            <div class="grafico-container">
+                <canvas id="peso-chart"></canvas>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Balança Inteligente - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="BalancaInteligente.js"></script>
+</body>
+</html>
